@@ -60,6 +60,10 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("Os veículos estacionados são:");
                 // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
                 // *IMPLEMENTE AQUI*
+                foreach (string element in veiculos)
+                {
+                    Console.WriteLine($"Placa: {element}");
+                }
             }
             else
             {
