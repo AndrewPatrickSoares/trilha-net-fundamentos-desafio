@@ -16,9 +16,15 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para estacionar:");
 
             string placa = Console.ReadLine();
+            if (placa.Length == 7)
+            {       
             Console.WriteLine($"A placa digitada foi: {placa.ToUpper()}");
-            
             veiculos.Add(placa);
+            }
+            else
+            {
+                Console.WriteLine("A placa deve conter 7 dígitos");
+            }
         }
 
         public void RemoverVeiculo()
