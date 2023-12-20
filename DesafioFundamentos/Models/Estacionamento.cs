@@ -54,9 +54,9 @@ namespace DesafioFundamentos.Models
             if (veiculos.Any())
             {
                 Console.WriteLine("Os veículos estacionados são:");
-                foreach (string element in veiculos)
+                foreach (string placa in veiculos)
                 {
-                    Console.WriteLine($"Placa: {element.ToUpper()}");
+                    Console.WriteLine($"Placa: {placa.ToUpper()}");
                 }
             }
             else
