@@ -16,7 +16,8 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para estacionar:");
 
             string placa = Console.ReadLine();
-            Console.WriteLine($"A placa digitada foi: {placa}");
+            Console.WriteLine($"A placa digitada foi: {placa.ToUpper()}");
+            
             veiculos.Add(placa);
         }
 
@@ -32,11 +33,10 @@ namespace DesafioFundamentos.Models
 
                 string horasEstacionado = Console.ReadLine();
                 int horas = Convert.ToInt32(horasEstacionado);
-                decimal valorTotal = precoInicial + precoPorHora * horas; 
+                decimal valorTotal = precoInicial + precoPorHora * horas;
 
                 veiculos.Remove(placa);
-
-                Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
+                Console.WriteLine($"O veículo {placa.ToUpper()} foi removido e o preço total foi de: R$ {valorTotal}");
             }
             else
             {
@@ -51,7 +51,7 @@ namespace DesafioFundamentos.Models
                 Console.WriteLine("Os veículos estacionados são:");
                 foreach (string element in veiculos)
                 {
-                    Console.WriteLine($"Placa: {element}");
+                    Console.WriteLine($"Placa: {element.ToUpper()}");
                 }
             }
             else
