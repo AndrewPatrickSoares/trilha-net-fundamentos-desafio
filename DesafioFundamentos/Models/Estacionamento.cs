@@ -37,8 +37,7 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Digite a quantidade de horas que o veículo permaneceu estacionado:");
 
-                string horasEstacionado = Console.ReadLine();
-                int horas = Convert.ToInt32(horasEstacionado);
+                decimal horas = Convert.ToDecimal(Console.ReadLine());
                 decimal valorTotal = precoInicial + precoPorHora * horas;
 
                 veiculos.Remove(placa);
